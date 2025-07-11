@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cornelius Nzioki">
+    <meta name="keywords" content="lintecdigitalsolutions,cornelius,Cornelius Nzioki,technology,website,seo,graphic designer">
+    <title>Lintec Digital Solutions</title>
+    <link rel="icon" href="IMG-20250627-WA0059.jpg">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+       
+        /* Header */
+header {
+    background-color: #00FF00;
+    color: green;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Position relative to use absolute positioning for navigation */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.0rem;
+}
+
+/* Navigation Block at the bottom */
+.header-nav {
+    position: absolute;
+    bottom: 0; /* Position the nav block at the bottom of the header */
+    left: 0;
+    right: 0;
+    background-color: #000;  /* Black background for the navigation */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center; /* Center the navigation items */
+    margin: 0;
+}
+
+.header-nav ul li a {
+    color: white;  /* White color for links */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.header-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+        /* Vision & Mission Section */
+        #vision-mission {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #FF6347, #FF4500); /* Tomato gradient */
+            color: #fff;  /* Set text color to white */
+            text-align: center;
+        }
+
+        #vision-mission h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .vision-mission-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;  /* Center the content */
+        }
+
+        .vision, .mission {
+            flex: 1;
+            min-width: 250px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .vision:hover, .mission:hover {
+            transform: translateY(-10px);  /* Lift up slightly on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .vision h3, .mission h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .vision p, .mission p {
+            font-size: 1.1rem;
+            color: #fff;
+        }
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #333;
+    text-align: center; /* Center the content */
+    color: rgb(237, 225, 225);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center; /* Center the paragraph */
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center; /* Center the text inside items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item a:hover {
+    color: #4fe30b;
+}
+
+
+        /* WhatsApp Icon Styling */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 100%;
+            padding: 10px;
+            font-size: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .whatsapp-icon:hover {
+            background-color: #12d560;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-icon i {
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #15ff00;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lintec Digital Solutions offers cutting-edge services in digital marketing, design, branding, SEO, and more to boost your brand's online presence.">
+    <title>LiINTEC DIGITAL SOLUTIONS</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        /* Header */
+        header {
+            background-color: #00FF00;
+            color: green;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.0rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+       
+
+        /* Hero Section */
+        #hero {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 70px 0;
+        }
+
+        #hero h2 {
+            font-size: 2.0rem;
+        }
+
+        #hero p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .cta-btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .cta-btn:hover {
+            background-color: #cc5200;
+        }
+
+        /* Services Section */
+#services h2 {
+    text-align: center; /* Centers the heading */
+}
+
+        #services {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .services-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            flex: 1;
+            min-width: 220px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .service p {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .services-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+/* Vision & Mission Headings */
+#vision-mission h3 {
+    font-size: 2rem; /* Make the text slightly bigger */
+    color: white;  /* Set the color to white */
+    font-weight: bold; /* Make the font bold for emphasis */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add a smooth transition for hover effects */
+}
+
+#vision-mission h3:hover {
+    color: #ff6600; /* Change color on hover to a vibrant color like orange */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+/* Contact Us Section Heading */
+#contact h2 {
+    font-size: 2rem; /* Adjust the size if needed */
+    color: white;  /* Set the color to white */
+    font-weight: bold; /* Make the font bold for better visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better contrast */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add a smooth transition for hover effects */
+}
+
+#contact h2:hover {
+    color: #ff6600; /* Change the color to orange on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4134395896733844"
+     crossorigin="anonymous"></script>
+<body>
+   <!-- Header -->
+<header>
+    <div class="container">
+        <h1>Lintec Digital Solutions</h1><br>
+    </div>
+    <!-- Navigation Section -->
+    <div class="header-nav">
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#clients">Our Clients</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Your Digital Transformation Starts Here</h2>
+            <p>Transform your brand with innovative digital solutions and creative design.</p>
+           <br><br> <a href="#services" class="cta-btn">Explore Our Services</br></a>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>Reach your target audience with tailored marketing strategies.</p>
+            </div>
+            <div class="service">
+                <h3>Design, Branding & Printing</h3>
+                <p>We create standout designs for your business identity.</p>
+            </div>
+            <div class="service">
+                <h3>Photography</h3>
+                <p>High-quality photography for your digital presence.</p>
+            </div>
+            <div class="service">
+                <h3>Social Media Management</h3>
+                <p>We manage and grow your social media presence effectively.</p>
+            </div>
+            <div class="service">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website's visibility with our expert SEO services, driving organic traffic and improving search engine rankings.</p>
+            </div>
+            <div class="service">
+                <h3>Cybersecurity</h3>
+                <p>Protect your business from online threats with our comprehensive cybersecurity solutions, ensuring safety and trust.</p>
+            </div>
+            <div class="service">
+                <h3>Business Consultation</h3>
+                <p>Unlock your business potential with strategic consultation and tailored solutions to enhance growth and efficiency.</p>
+            </div>
+            <div class="service">
+                <h3>Website Development</h3>
+                <p>Create a stunning, responsive, and user-friendly website that reflects your brand and drives conversions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/254715628431" target="_blank" class="whatsapp-icon" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
+
+    <section id="vision-mission">
+    <div class="container">
+        <h2>Our Vision & Mission</h2>
+        <div class="vision-mission-content">
+            <!-- Vision -->
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be a global leader in innovative digital solutions, empowering businesses to thrive in a connected world through cutting-edge technology and creativity.</p>
+            </div>
+
+            <!-- Mission -->
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>At Lintec Digital Solutions, our mission is to deliver exceptional digital marketing, design, development, and consultation services, helping businesses elevate their brand presence and achieve measurable growth through tailored strategies and innovative technologies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Get in touch with us today.</p>
+
+            <div class="contact-details">
+                <!-- Phone Number (Call) -->
+                <div class="contact-item">
+                    <a href="tel:+254790292063">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>+254790292063</span>
+                    </a>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-item">
+                    <a href="mailto:info@lintecdigitalsolutions.africa">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>lintecdigitalsolutions@gmail.com</span>
+                    </a>
+                </div>
+
+                <!-- Office Address -->
+                <div class="contact-item">
+                    <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                    <span>3rd Floor, Biashara Plaza, Thika</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Icon at the bottom right -->
+    <a href="https://wa.me/254715628431" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lintec Digital Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
